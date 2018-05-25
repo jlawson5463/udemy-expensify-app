@@ -1,0 +1,12 @@
+import React from 'react';
+import { shallow } from 'enzyme';
+import { ExpenseListItem } from '../../components/ExpenseListItem';
+import expenses from '../fixtures/expenses';
+
+test('should render expense list item with correct values', () => {
+    
+    const wrapper = shallow(<ExpenseListItem {...expenses[0]} />);
+    expect(wrapper).toMatchSnapshot();
+});
+
+// add new test case for expenses dashboard page and not found page
