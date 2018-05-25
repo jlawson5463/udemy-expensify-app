@@ -8,5 +8,3 @@ test('should render expense list item with correct values', () => {
     const wrapper = shallow(<ExpenseListItem {...expenses[0]} />);
     expect(wrapper).toMatchSnapshot();
 });
-
-// add new test case for expenses dashboard page and not found page
