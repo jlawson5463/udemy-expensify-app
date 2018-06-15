@@ -85,12 +85,12 @@
 //   db.ref('age').set(38);
 // }, 10500)
 
-// const basicInfo = db.ref().on('value', (snapshot) => {
-//   const val = snapshot.val();
-//   console.log(`${val.name} is a ${val.job.title} at ${val.job.company}`);
-// }, (e) => {
-//   console.log('Error fetching data', e)
-// })
+const basicInfo = db.ref().on('value', (snapshot) => {
+  const val = snapshot.val();
+  console.log(`${val.name} is a ${val.job.title} at ${val.job.company}`);
+}, (e) => {
+  console.log('Error fetching data', e)
+})
 
 // Jane is a software developer at Amazon
 
