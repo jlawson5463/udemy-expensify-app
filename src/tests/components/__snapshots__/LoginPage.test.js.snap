@@ -10,11 +10,8 @@ exports[`should render login page 1`] = `
     <h1
       className="box-layout__title"
     >
-      Clever name inserted here
+      Manage your expenses
     </h1>
-    <p>
-      It's time to get your expenses under control.
-    </p>
     <button
       className="button"
       onClick={[MockFunction]}
